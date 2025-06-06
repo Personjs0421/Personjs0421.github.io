@@ -1,0 +1,361 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent: #00ffd5;
+    --muted: #888;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+#name {
+    color: var(--accent);
+}
+
+header.navbar {
+    background: #1a1a1a;
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 2.75rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #cfd8dc;
+}
+
+.btn {
+    background: var(--accent);
+    color: #121212;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+
+.btn:hover {
+    background: #00ccb0;
+}
+
+.section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.section p {
+    color: var(--text-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 255, 213, 0.2);
+}
+
+.project-card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+hr {
+    border-color: #1a1a1a;
+    /*border-top: 3px;*/
+    margin-top: 1rem;
+}
+
+.card-img {
+    width:500px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1a1a1a;
+    color: var(--muted);
+    border-top: 1px solid #333;
+}
+
+.carousel-main {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    aspect-ratio: 16 / 9; /* Ensures consistent responsive height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-main:hover {
+    box-shadow: 0 6px 20px rgba(0, 255, 213, 0.2);
+    cursor: pointer;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 100%; /* Fill the carousel-main height */
+}
+
+.carousel-slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-caption {
+    position: relative;
+    z-index: 2;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    box-sizing: border-box;
+}
+
+.carousel-caption h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.carousel-caption p {
+    margin: 0.3rem 0 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 0 0.8rem;
+    cursor: pointer;
+    z-index: 5;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.carousel-thumbnails img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: border 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-thumbnails img:hover,
+.carousel-thumbnails img.active {
+    border-color: var(--accent);
+    opacity: 1;
+}
+
+/* Base hidden state */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 20, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+/* Show state */
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Keep this for quick hide logic */
+.overlay.hidden {
+    display: none;
+}
+
+/* Animate the content inside */
+.overlay-content {
+    background: #1e1e2a;
+    color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Animated state when overlay is shown */
+.overlay.show .overlay-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.overlay-content img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.overlay-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.8rem;
+    background: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+}
+.overlay-close:hover {
+    color: #fff;
+}
+
+.desc {
+    display: none;
+}
+
+#contact a {
+    color: var(--accent);
+    text-decoration: none;
+}

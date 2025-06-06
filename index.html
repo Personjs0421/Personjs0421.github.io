@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Hello, my name is</h2>
+    <h2 id="name">Julian Soong</h2>
+    <p>Local Computer Nerd</p>
+    <a href="#about" class="btn">whoami</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Hi, my name is Julian Soong and I go by personjs online. I have played under Intel Chips and carbonara, my Capture-The-Flag (CTF) teams.
+    In my free time, I enjoy playing video games, cubing, and of course, coding and CTFs.
+    I have been programming since I was in primary school and have been playing in CTFs since 2024.
+  </p>
+  <p>
+    My programming journey has been very enjoyable so far, going from thinking that "high-level language" meant "difficult to learn" to earning myself an olympiad medal.
+    My cybersecurity journey has been similar, from trying to open an ELF file on a Windows machine... in notepad... to being one of the top CTF players in the country in my age group.
+  </p>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Achievements</h2>
+  <div class="carousel">
+    <div class="carousel-main">
+      <button class="nav-btn left-btn">&#10094;</button>
+      <div class="carousel-track">
+        <div class="carousel-slide active">
+          <img src="ycep2024leaderboard.png" alt="Slide 1">
+          <div class="carousel-caption">
+            <h3>YCEP/CCTF 2024</h3>
+            <p></p>
+            <p>Unexpected but welcome surprise</p>
+            <p class="desc">
+              After a shaky performance in the YCEP bootcamp and barely making the cut for the Central Capture The Flag (CCTF)
+              competition, I managed to achieve my highest placing at the time, 4th place individual at the CCTF 2024.
+              Achieving 4th place only 6 months after learning about CTFs showed me my potential and pushed my on my
+              journey to become better.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="blahajctf.jpg" alt="Slide 2">
+          <div class="carousel-caption">
+            <h3>BlahajCTF 2024</h3>
+            <p>First time qualifying for physical finals of an online contest</p>
+            <p class="desc">
+              While I technically participated in a team of 4, due to their circumstances the other 3 were only able to
+              score around 2% of our total points, so I hacked away for almost a day straight and managed to qualify for
+              the finals as the only secondary school team (to my knowledge). It was definitely a challenge playing essentially
+              solo as a secondary schooler against teams of JC and polytechnic students, but it was a fun experience nonetheless
+               (and I'm happy I even qualified honestly).
+            </p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="ybnleaderboard.png" alt="Slide 3">
+          <div class="carousel-caption">
+            <h3>YBNCTF 2024</h3>
+            <p>Just barely qualified </p>
+            <p class="desc">
+              Similar to that year's BlahajCTF, I technically participated in a team of 3, but the other two were not able
+              to help out in the qualifiers or finals. In the end, I went to the physical finals alone and managed to get
+              10th place, which was an improvement over my 11th place in the qualifiers.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="ycep2025leaderboard.png" alt="Slide 4">
+          <div class="carousel-caption">
+            <h3>YCEP 2025</h3>
+            <p>My first win!</p>
+            <p class="desc">
+              After a relatively disappointing performance in the 2024 YCEP, I came back in 2025 with my most dominant
+              performance yet and first win in the SP YCEP bootcamp
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="noicertificate.png" alt="Slide 5">
+          <div class="carousel-caption">
+            <h3>NOI 2025</h3>
+            <p>My introduction to Competitive Programming</p>
+            <p class="desc">
+              Initially, I didn't really want to compete in the National Olympiad of Informatics (NOI),
+              but after some contemplation I figured it would be worth a try. After my end-of-year examinations in 2024,
+              I dedicated my time to learning C++, which was a new(ish) language for me, as well tons of algorithms and problem-solving skills.
+              In the end, I managed to claim a satisfactory silver medal after 3-4 months of preparation. I'm aiming for a gold medal in 2026!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="cctf2025leaderboard.png" alt="Slide 6">
+          <div class="carousel-caption">
+            <h3>CCTF 2025</h3>
+            <p>Not bad, but room for improvement</p>
+            <p class="desc">
+              Following my 4th place placing in 2024, I wanted to do better in 2025. Although I was
+              gunning for 1st but placed 3rd, I did manage to place higher than the last year, so I suppose all is well.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="nco2025leaderboard.png" alt="Slide 7">
+          <div class="carousel-caption">
+            <h3>NCO 2025</h3>
+            <p>My first olympiad gold!</p>
+            <p class="desc">
+              I was pretty nervous and not very confident going into the National Cybersecurity Olympiad (NCO),
+              competing against JC students with more experience, especially since it was in an individual competition.
+              However, I somehow managed to pull through with a gold medal and 6th place overall, allowing me to compete
+              in the inaugural International Cybersecurity Olympiad in late June.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="nav-btn right-btn">&#10095;</button>
+    </div>
+
+    <div class="carousel-thumbnails">
+      <img src="ycep2024leaderboard.png" class="thumb active" data-index="0" alt="Thumb 1">
+      <img src="blahajctf.jpg" class="thumb" data-index="1" alt="Thumb 2">
+      <img src="ybnfinalleaderboard.png" class="thumb" data-index="2" alt="Thumb 3">
+      <img src="ycep2025leaderboard.png" class="thumb" data-index="3" alt="Thumb 4">
+      <img src="noicertificate.png" class="thumb" data-index="4" alt="Thumb 5">
+      <img src="cctf2025leaderboard.png" class="thumb" data-index="5" alt="Thumb 6">
+      <img src="nco2025leaderboard.png" class="thumb" data-index="6" alt="Thumb 7">
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h4>Python gamedev</h4>
+      <p>My programming career started out with making games in Python, and I learnt the most in making games</p>
+    </div>
+    <div class="project-card">
+      <h4>Tic Tac Toe in Minecraft</h4>
+      <p>
+        While learning about the basics of computer science and computer architecture, I made a logical "computer"
+        in Minecraft to play Tic-Tac-Toe. It features a working Tic-Tac-Toe board, win/loss/draw detection and auto restarting.
+      </p>
+    </div>
+    <div class="project-card">
+      <h4>Python FTP server</h4>
+      <p>
+        As the name suggests, it is an FTP that features client/server programs AES encryption for security. Future
+        features will(may) include Diffie-Hellman key exchange for better security, as well as a UI.
+      </p>
+    </div>
+    <div class="project-card">
+      <h4>Project One</h4>
+      <p>A brief description of your project goes here.</p>
+    </div>
+    <div class="project-card">
+      <h4>Project Two</h4>
+      <p>Another short blurb about this project.</p>
+    </div>
+    <div class="project-card">
+      <h4>Project Three</h4>
+      <p>Another short blurb about this project.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>You can reach me at <a href="mailto:personjs0421@gmail.com">personjs0421@gmail.com</a>.</p>
+</section>
+
+<div id="overlay" class="overlay hidden">
+  <div class="overlay-content">
+    <button class="overlay-close">&times;</button>
+    <img id="overlay-img" src="" alt="Overlay image">
+    <h2 id="overlay-title">Title</h2>
+    <p id="overlay-desc">Description</p>
+  </div>
+</div>
+
+
+<script src="index.js"></script>
+
+
+
+</body>
+</html>
