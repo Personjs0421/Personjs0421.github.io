@@ -84,6 +84,10 @@ header.navbar {
     color: #cfd8dc;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .btn {
     background: var(--accent);
     color: #121212;
@@ -115,6 +119,10 @@ header.navbar {
 
 .section p {
     color: var(--text-color);
+}
+
+#about-content {
+    display: flex;
 }
 
 .projects-grid {
@@ -312,8 +320,9 @@ footer {
     color: #f0f0f0;
     padding: 2rem;
     border-radius: 12px;
-    max-width: 700px;
+    max-width: 1000px;
     width: 90%;
+    height: 80%;
     text-align: center;
     position: relative;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -331,7 +340,7 @@ footer {
 
 .overlay-content img {
     width: 100%;
-    max-height: 500px;
+    max-height: 550px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
